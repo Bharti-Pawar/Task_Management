@@ -1,0 +1,315 @@
+.main-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #9d8877; /* Set the background color for the main page */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color:#ae9c7f;;
+}
+
+
+/* Logo container styles */
+.logo-container {
+  align-items: center;
+  display: flex;
+}
+
+.logo {
+  width: 250px; /* Adjust size as needed */
+  height: auto;
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.title {
+  margin-top: 10px;
+  color:rgb(47, 70, 37);
+  font-size: 36;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+.main-page .button-container {
+  position: relative;
+}
+
+.main-page .get-started-button {
+  background-color: #4a2f04;
+  color:seashell;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.main-page .get-started-button:hover {
+  background-color: #365d37;
+}
+
+.main-page .tooltip {
+  visibility: hidden;
+  background-color: rgba(126, 97, 61, 0.7);
+  color: seashell;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 10px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.main-page .get-started-button:hover .tooltip {
+  visibility: visible;
+}
+
+.tfplogo{
+  width: 200px;
+}
+
+.task-card {
+  background-color: #83642f;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-cards {
+  display: grid;
+  margin-top: 15px;
+  grid-gap: 20px;
+}
+
+
+.task-card:hover {
+  transform: translateY(-5px);
+}
+
+.task-card h2 {
+  font-size: 30px;
+  color: #01180384; /* Title color */
+}
+
+.task-card p {
+  font-size: 25px;
+  color:  seashell; /* Description color */
+}
+
+.task-card ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-card ul li {
+  font-size: 15px;
+  color: seashell; /* Subtask color */
+}
+
+.task-buttons {
+  margin-top: 10px;
+}
+
+.task-buttons button {
+  color: rgb(55, 88, 62);
+  background:seashell;
+  margin-right: 10px;
+  padding: 5px 10px;
+  font-size: 15px;
+}
+
+.task-card.completed {
+  background-color: rgba(126, 172, 114, 0.704); /* Change the background color to saddlebrown when the completed class is applied */
+}
+
+
+
+
+
+.left-column {
+  width: 80%; /* Adjust the width of the left column */
+  padding: 20px 10px; /* Adjust the padding */
+}
+
+.right-column {
+  width: 60%; /* Adjust the width of the right column */
+  padding: 20px 10px; /* Adjust the padding */
+}
+
+
+.col-md-6 {
+  flex: 0 0 calc(50% - 10px);
+  max-width: calc(50% - 10px);
+  margin-bottom: 20px;
+}
+
+.left-column, .right-column {
+  background-color: #775938;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+.add-new-task-button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.add-new-task-button {
+  background-color: #977023;
+  color:seashell;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+/* Input button container styles */
+.button-container {
+  margin-bottom: 20px;
+}
+
+.input-button {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.input-button input[type="text"] {
+  flex: 1;
+  margin-right: 10px;
+}
+
+
+.input-container input[type="text"],
+.input-container textarea {
+  width: 90%; /* Adjust width percentage as needed */
+  max-width: 400px; /* Set a maximum width if necessary */
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.input-container input[type="text"]:focus,
+.input-container textarea:focus {
+  border-color: #8B4513;
+  outline: none;
+}
+
+
+
+/* Subtask list styles */
+.subtask-list ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.subtask-list li {
+  margin-bottom: 5px;
+}
+
+/* Save task button styles */
+.save-task-button , .cancel-task-button {
+  background-color: #9e6c22;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.save-task-button:hover {
+  background-color: #816525;
+}
+
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+.search-filter-section {
+  margin-top: 20px;
+  margin-bottom: 20px; /* Add margin-bottom to increase space */
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-task {
+  margin-bottom: 10px;
+  padding-top: 5px;
+   width: max-content; 
+}
+
+.form-select {
+  margin-bottom: 30px;
+}
+
+
+
+
+.add-button {
+  background-color: #af7b1284;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+.task-count-bars {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.bar-label {
+  margin-right: 10px;
+}
+
+.total-bar,
+.completed-bar,
+.incomplete-bar {
+  height: 20px;
+}
+
+.total-bar {
+  background-color: #977023;
+}
+
+.completed-bar {
+  background-color: #009900; /* Adjust color as needed */
+}
+
+.incomplete-bar {
+  background-color: #ff3300; /* Adjust color as needed */
+}
+
+.count-label {
+  margin-left: 10px;
+}
